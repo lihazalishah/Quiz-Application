@@ -1,0 +1,141 @@
+/* index.html */
+#maindiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    border: 3px solid brown;
+}
+#Start{
+    width: 20%;
+    font-size: large;
+    border: 2px solid black;
+    margin-left: 80%;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 10px 10px 10px 10px;
+    outline: none;
+    color: rgb(248, 246, 245);
+    background-color: rgb(134, 121, 121);
+    cursor: pointer;
+}
+#Start:hover{
+    background-color: rgb(143, 143, 248);
+    color: rgb(75, 71, 71);
+
+}
+
+#bodydiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 6px solid brown;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+
+/* Question */
+
+#bodydiv{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: 6px solid brown;
+    border-radius: 10px 10px 10px 10px;
+    overflow: hidden;
+    background-color: darkcyan;
+}
+
+.questionDisable{
+    visibility: hidden;
+    
+}
+.visible{
+    visibility: visible;
+}
+
+
+
+
+.options,.correctoption{
+    outline: none;
+    width: 50%;
+    font-size: xx-large;
+    border-radius: 5px 5px 5px 5px;
+    background:  none;
+    margin: 1px ;
+    margin-left: 5%;
+    cursor: pointer;
+}
+.options:hover,.correctoption:hover{
+    background-color: rgb(73, 106, 168);
+    color: rgb(216, 184, 191);
+    
+}
+.question{
+    width: 100%;
+    background-color: darkblue;
+    color: white;
+    font-size:xx-large;
+    padding: 10px;
+    margin: 5px;
+}
+@media only screen and (max-width : 500px){
+    #bodydiv,.options,.correctoption{
+        width: 100%;
+    }    
+    .question{
+        font-size: 20px;
+    }
+    #date,#timer,#max_mark{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .options,.correctoption{
+        width: 100%;
+        font-size: medium;
+        margin-left: 10px;
+    
+    }
+    #Start{
+        width: 95%;
+        margin-left: 1%;
+    }
+}
+
+
+/* Result */
+
+#Resultt{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -160%;
+    text-align: center;
+    width: 50%;
+}
+td{
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+    width: 100%;
+    font-size: larger;
+    font-weight:bolder;
+    background-color: cornflowerblue;
+    color: cornsilk;
+    
+}
+#hedingtd{
+    font-weight: bolder;
+    font-size: 30px;
+    color: rgb(245, 212, 212);
+    background-color: royalblue;
+    text-align: center;
+    text-decoration: underline;
+    font-size: xx-large;
+    font-style: italic;
+}

@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questions</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="bodydiv">
+
+        <h1 style="color: cornsilk;text-align: center;font-size: 50px; width: 100%; text-decoration: underline;">Multiple Choice
+            Questions </h1>
+
+        <span style="margin-left: 1%; font-size: 15px; color: cornsilk;" id="date"></span>
+        <span id="timer" style="margin-left: 17%; font-size: 15px; color: cornsilk;"></span>
+        <span id="max_mark" style="margin-left: 40%; font-size: 15px; color: cornsilk;">Max marks : 20</span>
+        <div>
+            <h3 class="question">Question 01:World Trade Organization came into existence in……</h3>
+            <div id="question1div">
+
+                <div class="options">
+                    <input type="radio" id="correctoption1.2" class="options" onclick="scoree()">1993</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption1.3" class="options" onclick="scoree()">1994</input> <br>
+                </div>
+                <div class="correctoption">
+                    <input type="radio" id="correctoptions1" class="correctoption" onclick="scoree()">1995</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption1.4" class="options" onclick="scoree()">1996</input> <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="question2div2">
+            <h3 class="question">Question 02: Who was the first president of the Indian National Congress?</h3>
+            <div id="question2div">
+
+                <div class="options">
+                    <input type="radio" id="correctoption2.2" class="options" onclick="scoree2()">Ballabhbhai Patel
+                    </input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption2.3" class="options" onclick="scoree2()">Motilal Nehru</input>
+                    <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption2.4" class="options" onclick="scoree2()">Lord Cripps</input>
+                    <br>
+                </div>
+                <div class="correctoption">
+                    <input type="radio" id="correctoptions2" class="correctoption" onclick="scoree2()">WC
+                    Banerjee</input> <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="question3div3">
+            <h3 class="question">Question 03: In which province maximum languages are spoken?</h3>
+            <div id="question3div">
+                <div class="options">
+                    <input type="radio" id="correctoption3.2" class="options" onclick="scoree3()">Sindh</input> <br>
+                </div>
+                <div class="correctoption">
+                    <input type="radio" id="correctoptions3" class="correctoption"
+                        onclick="scoree3()">Balochistan</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption3.3" class="options" onclick="scoree3()">Khyber PK</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption3.4" class="options" onclick="scoree3()">Punjab</input> <br>
+                </div>
+
+            </div>
+        </div>
+
+        <div id="question4div4">
+            <h3 class="question">Question 04: How many letters are there in Urdu alphabets:</h3>
+            <div id="question4div">
+                <div class="options">
+                    <input type="radio" id="correctoption4.3" class="options" onclick="scoree4()">35</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption4.2" class="options" onclick="scoree4()">36</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoptions4" class="correctoption" onclick="scoree4()">37</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption4.4" class="options" onclick="scoree4()">None of these</input>
+                    <br>
+                </div>
+            </div>
+        </div>
+
+        <div id="question5div5">
+            <h3 class="question">Question 05: Amir Crore is the first poet of:</h3>
+            <div id="question5div">
+                <div class="options">
+                    <input type="radio" id="correctoption5.3" class="options" onclick="scoree5()">Sindhi</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoptions5" class="correctoption" onclick="scoree5()">Pushto</input>
+                    <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption5.4" class="options" onclick="scoree5()">Punjabi</input> <br>
+                </div>
+                <div class="options">
+                    <input type="radio" id="correctoption5.2" class="options" onclick="scoree5()">Balochi</input> <br>
+                </div>
+            </div>
+        </div>
+
+       <a href="#Result"> <button id="Start" onclick="Result()">Submit</button> </a>
+    </div>
+
+
+    <div id="Result">
+        
+
+        <table id="Result">
+            <tr>
+                <td id="hedingtd"  colspan="3" >Result</td>
+            </tr>
+            <tr class="trr">
+                <td></td>
+                <td>Max marks</td>
+                <td>Marks obtained </td>
+            </tr>
+            <tr>
+                <td>Question 1</td>
+                <td>04</td>
+                <td id="question1Mark1"></td>
+
+            </tr>
+            <tr>
+                <td>Question 2</td>
+                <td>04</td>
+                <td id="question2Mark"></td>
+
+            </tr>
+            <tr>
+                <td>Question 3</td>
+                <td>04</td>
+                <td id="question3Mark"></td>
+
+            </tr>
+            <tr>
+                <td>Question 4</td>
+                <td>04</td>
+                <td id="question4Mark"></td>
+
+            </tr>
+            <tr>
+                <td>Question 5</td>
+                <td>04</td>
+                <td id="question5Mark"></td>
+
+            </tr>
+            <tr >
+                <td style="background-color: seagreen !important;">Total Marks</td>
+                <td style="background-color: seagreen !important;">20</td>
+                <td style="background-color: seagreen !important;" id="questionTotalMark"></td>
+
+            </tr>
+            <tr >
+                <td style="background-color: rgb(100, 218, 151) !important; color: black;">Percentage</td>
+                <td style="background-color: rgb(100, 218, 151) !important; color: black;">100%</td>
+                <td style="background-color: rgb(100, 218, 151) !important; color: black;" id="percentage"></td>
+
+            </tr >
+            <tr>
+                <td style="background-color: rgb(55, 241, 86) !important;color: chocolate;" >Gread</td>
+                <td style="background-color: rgb(55, 241, 86) !important; color: chocolate;">------</td>
+                <td style="background-color: rgb(55, 241, 86) !important; color: chocolate;" id="Gread"></td>
+
+            </tr>
+        </table>
+
+
+       <a href="Questions.html"> <span><button id="Start">Retry</button></span></a>
+       <a href="index.html"> <span><button id="Start">Home</button></span></a>
+
+
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
